@@ -14,6 +14,8 @@ class CambiarEdad extends UsuarioEvent {
 }
 
 class AgregarProfesion extends UsuarioEvent {
-  final List<String> profesion;
+  final String profesion;
   AgregarProfesion(this.profesion);
 }
+
+class BorrarUsuario extends UsuarioEvent {}

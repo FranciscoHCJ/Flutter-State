@@ -12,6 +12,13 @@ class Pagina1Page extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: Text('Pagina1'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.delete), 
+            onPressed: () {
+              BlocProvider.of<UsuarioBloc>(context).add( BorrarUsuario() );
+            })
+        ],
       ),
       body: BlocBuilder<UsuarioBloc, UsuarioState>(
         builder: ( _ , state) {

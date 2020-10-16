@@ -51,8 +51,7 @@ class Pagina2Page extends StatelessWidget {
               child: Text('Añadir Profesión', style: TextStyle( color: Colors.white ) ),
               color: Colors.blue,
               onPressed: () {
-
-                // usuarioBloc.add( AgregarProfesion('Nueva Profesion') );
+                usuarioBloc.add( AgregarProfesion('Nueva Profesion') );
 
               }
             ),

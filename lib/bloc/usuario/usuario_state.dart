@@ -9,4 +9,10 @@ class UsuarioState {
     : usuario = user ?? null,
     existeUsuario = ( user != null ) ? true : false;
 
+  UsuarioState copyWith({ Usuario usuario }) => UsuarioState(
+    user: usuario ?? this.usuario
+  );
+
+  UsuarioState estadoInicial() => new UsuarioState();
+
 }
